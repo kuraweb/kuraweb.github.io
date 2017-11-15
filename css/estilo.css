@@ -1,0 +1,503 @@
+html, body {
+    height: 100vh;
+    margin-left: 4px;
+}
+
+.logo-filme, .sinopse, .container-imgs, footer, nav {
+    opacity: 0;
+}
+
+.icon-bar {
+    background-color: #000;
+}
+
+.lista {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar {
+    margin: 15px 0;
+}
+
+.lista li a {
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'Raleway';
+    font-weight: 500;
+}
+
+section {
+    width: 100%;
+    background: #fff;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1, h2 {
+    text-align: center;
+    padding: 42px 0;
+    z-index: 5;
+}
+
+.nome-kefera {
+    margin-top: 50px;
+    width: 300px;
+    opacity: 0;
+    position: relative;
+}
+
+.cores {
+    margin-top: -220px;
+    height: 250px;
+    position: relative;
+}
+
+.roxo {
+    position: absolute;
+    margin: 50px 0 0 25%;
+    width: 145px;
+    z-index: 3;
+    opacity: 0;
+}
+
+.amarelo {
+    position: absolute;
+    margin: 30px 0 0 28%;
+    width: 255px;
+    z-index: 2;
+    opacity: 0;
+}
+
+.azul {
+    position: absolute;
+    margin: 30px 0 0 40%;
+    width: 290px;
+    z-index: 1;
+    opacity: 0;
+}
+
+.vermelho {
+    position: absolute;
+    margin: 80px 0 0 58%;
+    width: 155px;
+    z-index: 4;
+    opacity: 0;
+}
+
+.logo-filme {
+    width: 60%;
+    opacity: 0;
+}
+
+.background-img {
+    height: 700px;
+    width: 550px;
+    background: #fbb03f;
+    margin: 3% 0 0 2%;
+    opacity: 1;
+}
+
+.main-img {
+    margin: -18.2% 0 0 -10%;
+    opacity: 1;
+}
+
+/* FOOTER (GERAL) */
+
+footer {
+    padding: 5%;
+    bottom: 0;
+}
+
+.footer-social ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+}
+
+.footer-social ul li svg {
+    fill: #000;
+    margin-right: 25px;
+    width: 1.7em;
+    height: 1.7em;
+}
+
+.footer-social ul li:first-child svg {
+    width: 1.4em;
+    height: 1.4em;
+    margin-top: 1px;
+    margin-right: 22px;
+}
+
+@media (max-width: 1199px) {
+    .roxo {
+        margin-left: 10%;
+    }
+
+    .amarelo {
+        margin-left: 15%;
+    }
+
+    .azul {
+        margin-left: 35%;
+    }
+
+    .vermelho {
+        margin-left: 65%;
+    }
+}
+
+@media(max-width: 991px) {
+    .roxo {
+        margin-left: 27%;
+    }
+
+    .amarelo {
+        margin-left: 30%;
+    }
+
+    .azul {
+        margin-left: 40%;
+    }
+
+    .vermelho {
+        margin-left: 57%;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    h1 {
+        margin-top: -15px;
+    }
+
+    .background-img {
+        margin: -1050px auto 0;
+        width: 550px;
+    }
+
+    .logo-filme {
+        margin-top: 750px;
+        width: 570px;
+    }
+    
+    .sinopse {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 767px) {
+    .lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li a {
+        margin-bottom: 50px;
+    }
+    
+    .cores {
+        margin-top: -440px;
+    }
+
+    .roxo {
+        margin-left: 17%;
+    }
+
+    .amarelo {
+        margin-left: 21%;
+    }
+
+    .azul {
+        margin-left: 38%;
+    }
+
+    .vermelho {
+        margin-left: 61%;
+    }
+
+    h1  {
+        height: 400px;
+        margin-top: -40px;
+    }
+
+    h2 {
+        margin-top: 50px;
+    }
+
+    .container-imgs {
+        margin-top: -35px;
+    }
+    
+    .logo-filme {
+        margin-top: 720px;
+        width: 80%;
+    }
+    
+    .sinopse {
+        margin-top: -px;
+    }
+    
+    footer {
+        padding: 10%;
+        bottom: 0;
+    }
+}
+
+@media(max-width: 480px) {
+    .cores {
+        margin-top: -440px;
+    }
+
+    .roxo {
+        margin-left: 4%;
+    }
+
+    .amarelo {
+        margin-left: 7%;
+    }
+
+    .azul {
+        margin-left: 23%;
+    }
+
+    .vermelho {
+        margin-left: 65%;
+    }
+
+    h1 {
+        margin-left: 0px;
+    }
+
+    .background-img {
+        margin-top: -940px;
+        width: 300px;
+        height: 439px; 
+    }
+
+    .main-img {
+        width: 390px;
+    }
+
+    h2 {
+        margin-top: -190px;
+    }
+
+    .container-imgs {
+        margin-top: 70px;
+    }
+    
+    .sinopse {
+        margin: 0 auto;
+    }
+    
+    footer {
+        padding: 5%;
+        bottom: 0;
+    }
+}
+
+@media(width: 360px) and (height: 640px) {
+    .cores {
+        width: 70%;
+    }
+    
+    .roxo {
+        margin-left: -3%;
+    }
+
+    .amarelo {
+        margin-left: -5%;
+    }
+
+    .vermelho {
+        margin-left: 86%;
+    }
+
+    .navbar-nav {
+        margin-left: 15px;
+    }
+
+    .background-img {
+        margin-top: -1010px;
+        margin-left: 25px;
+        width: 300px;
+        height: 439px; 
+    }
+
+    .main-img {
+        margin-left: -40px;
+    }
+    
+    .container-imgs {
+        margin-top: 80px;
+    }
+    
+    h2 {
+        margin-top: -220px;
+    }
+}
+
+@media(width: 320px) and (height: 568px) {
+    .roxo {
+        margin-left: -3%;
+    }
+
+    .amarelo {
+        margin-left: -5%;
+    }
+
+    .vermelho {
+        margin-left: 66%;
+    }
+
+    .navbar-nav {
+        margin-left: 15px;
+    }
+
+    .container > .navbar-header {
+        margin-right: -55px;
+    }
+    
+    .background-img {
+        margin-top: -1010px;
+        margin-left: 25px;
+        width: 300px;
+        height: 439px; 
+    }
+
+    .logo-filme {
+        width: 103%;
+        margin-left: 12px;
+    }
+    
+    .sinopse {
+        width: 100%;
+        margin-left: 20px
+    }
+    
+    .main-img {
+        margin-left: -40px;
+    }
+    
+    .container-imgs {
+        margin-top: 80px;
+    }
+    
+    h2 {
+        margin-top: -220px;
+    }
+}
+
+
+@media(width: 375px) and (height: 667px) {
+    .roxo {
+        margin-left: -3%;
+    }
+
+    .amarelo {
+        margin-left: -5%;
+    }
+
+    .vermelho {
+        margin-left: 66%;
+    }
+
+    .navbar-nav {
+        margin-left: 15px;
+    }
+
+    .container > .navbar-header {
+        margin-right: -55px;
+    }
+    
+    .background-img {
+        margin-top: -960px;
+        margin-left: 42px;
+        width: 300px;
+        height: 439px; 
+    }
+
+    .logo-filme {
+        width: 103%;
+        margin-left: 12px;
+    }
+    
+    .sinopse {
+        width: 100%;
+        margin-left: 20px
+    }
+    
+    .main-img {
+        margin-left: -40px;
+    }
+    
+    .container-imgs {
+        margin-top: 80px;
+    }
+    
+    h2 {
+        margin-top: -220px;
+    }
+}
+
+@media(width: 414px) and (height: 736px) {
+    .roxo {
+        margin-left: -3%;
+    }
+
+    .amarelo {
+        margin-left: -5%;
+    }
+
+    .vermelho {
+        margin-left: 66%;
+    }
+
+    .navbar-nav {
+        margin-left: 15px;
+    }
+
+    .container > .navbar-header {
+        margin-right: -25px;
+    }
+    
+    .background-img {
+        margin-top: -930px;
+        margin-left: 49px;
+        width: 300px;
+        height: 439px; 
+    }
+
+    .logo-filme {
+        width: 90%;
+        margin-left: 12px;
+    }
+    
+    .sinopse {
+        width: 90%;
+        margin-left: 20px
+    }
+    
+    .main-img {
+        margin-left: -40px;
+    }
+    
+    .container-imgs {
+        margin-top: 80px;
+    }
+    
+    h2 {
+        margin-top: -220px;
+    }
+}
